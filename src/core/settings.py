@@ -6,7 +6,12 @@ SECRET_KEY = 'django-insecure-c(@ndj$nw5k1(sn$zstk0srfyfcqq5^0h6y%3gikz3d1d_fx*x
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'dental.hoolisoft.xyz',
+    'dental.tr.hoolisoft.xyz',
+    'dental.ru.hoolisoft.xyz',
+    'dental.uk.hoolisoft.xyz'
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
