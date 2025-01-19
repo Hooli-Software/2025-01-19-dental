@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Medicare html template</title>
+    <meta name="description" content="MediCare is a minimal, clean and modern One Page HTML Template for dental clinics and any other medical and healthcare related businesses, such as hospitals, research centers, or pharmacies.">
+    <meta name="keywords" content=" appointment, clinic, dentist, doctor, health, health care, hospital, hospitality, laboratory, medical, medicine, patient">
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base' %}/stylesheets/bootstrap.css" >
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base' %}/stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base' %}/stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base' %}/stylesheets/colors/color1.css" id="colors">
+	
+	<!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'base' %}/stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="{% static 'base' %}/icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon-precomposed" sizes="48x48">
+    <link href="{% static 'base' %}/icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="{% static 'base' %}/icon/favicon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+        <script src="{% static 'base' %}/javascript/html5shiv.js"></script>
+        <script src="{% static 'base' %}/javascript/respond.min.js"></script>
+    <![endif]-->
+</head>                                 
+<body class="page-template-front-page header-sticky home">    
+    <div class="loader">
+        <span class="loader1 block-loader"></span>
+        <span class="loader2 block-loader"></span>
+        <span class="loader3 block-loader"></span>
+    </div>
+    <!-- Boxed -->
+    <div class="boxed">  
+        
+        {% include 'base/header.html' %}
+        {% include 'base/slider.html' %}
+       
+        <!-- Entry Page -->
+        <div class="entry-page">
+
+            {% block content %}
+
+            {% endblock %}
+
+        </div><!-- /.Entry Page --> 
+
+        {% include 'base/footer.html' %}
+    </div><!-- /.boxed -->
+
+    <!-- Go Top -->
+    <a class="go-top">
+        <i class="zmdi zmdi-long-arrow-up"></i>
+    </a>
+        
+    <!-- Javascript -->
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/bootstrap.min.js"></script>      
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.easing.js"></script>    
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/imagesloaded.min.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery-countTo.js"></script> 
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery-ui-datepicker.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery-validate.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.mb.YTPlayer.js"></script> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/gmap3.min.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/smoothscroll.js"></script>   
+    <script type="text/javascript" src="{% static 'base' %}/javascript/main.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="{% static 'base' %}/javascript/slider.js"></script>
+</body>
+
+</html>
