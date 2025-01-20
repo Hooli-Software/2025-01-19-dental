@@ -10,7 +10,8 @@ ALLOWED_HOSTS = [
     'dental.hoolisoft.xyz',
     'dental.tr.hoolisoft.xyz',
     'dental.ru.hoolisoft.xyz',
-    'dental.uk.hoolisoft.xyz'
+    'dental.uk.hoolisoft.xyz',
+    'localhost'
 ]
 
 INSTALLED_APPS = [
@@ -76,7 +77,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr'
 
 TIME_ZONE = 'UTC'
 
