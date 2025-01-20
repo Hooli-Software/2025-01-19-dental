@@ -13,6 +13,12 @@ ALLOWED_HOSTS = [
     'dental.uk.hoolisoft.xyz',
     'localhost'
 ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://dental.hoolisoft.xyz',
+    'https://dental.tr.hoolisoft.xyz',
+    'https://dental.ru.hoolisoft.xyz',
+    'https://dental.uk.hoolisoft.xyz',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
