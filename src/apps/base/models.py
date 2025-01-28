@@ -86,3 +86,16 @@ class DoctorInfo(SingletonModel):
     class Meta:
         verbose_name = 'Doktor bilgileri'
         verbose_name_plural = 'Doktor bilgileri'
+
+
+class ContactInfo(SingletonModel):
+    phone_number = models.CharField('Telefon numarası', max_length=128)
+    phone_number_repr = models.CharField('Telefon numarası (metin)', max_length=128)  # noqa
+    phone_number_wa = models.CharField('Whatsapp numarası', max_length=128)
+    phone_number_wa_repr = models.CharField('Whatsapp numarası (metin)', max_length=128)  # noqa
+    email = models.EmailField('E-posta adresi')
+    address = models.TextField('Adres')
+
+    class Meta:
+        verbose_name = 'İletişim bilgileri'
+        verbose_name_plural = 'İletişim bilgileri'

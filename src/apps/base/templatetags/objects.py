@@ -13,3 +13,8 @@ def get_service_categories():
 @register.simple_tag
 def get_social_accounts():
     return models.SocialAccount.objects.all()
+
+
+@register.simple_tag
+def get_contact_info():
+    return models.ContactInfo.load()

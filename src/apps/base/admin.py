@@ -54,3 +54,13 @@ class DoctorInfoAdmin(admin.ModelAdmin):
         'area',
         'paragraph'
     )
+
+
+@admin.register(models.ContactInfo)
+class ContactInfoAdmin(admin.ModelAdmin):
+    list_display = (
+        'phone_number_repr',
+        'phone_number_wa_repr',
+        'email',
+        'address'
+    )
