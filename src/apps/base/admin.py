@@ -7,7 +7,7 @@ from . import models
 class SlideAdmin(admin.ModelAdmin):
     list_display = (
         'title',
-        'link'
+        'type',
     )
 
 

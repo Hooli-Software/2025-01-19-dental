@@ -1,74 +1,145 @@
 {% load static %}
 
-<footer class="footer">
-  <div class="footer-widgets">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="widget widget_text">
-            <div class="textwidget">
-              <img src="{% static 'base' %}/images/logo-footer.png" alt="images" />
-              <p>Lorem ipsum dolor sit amet, consectetur elit. Pellentesque quis nunc turpis. Phasellus ut aliquam nisl eleifend risus.</p>
-            </div>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /.col-md-4 -->
-
-        <div class="col-md-4">
-          <div class="widget widget_text">
-            <h5 class="widget-title">Contact us</h5>
-            <div class="textwidget">
-              <p>
-                Adress: 151 Charlotte Street, London, UK.<br />
-                Email: Admin@medicare.com<br />
-                Phone: +89 123 456 789
-              </p>
-            </div>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /.col-md-4 -->
-
-        <div class="col-md-4">
-          <div class="widget widget_text">
-            <h5 class="widget-title">Working Hours</h5>
-            <div class="textwidget">
-              <p>
-                Monday to Friday: 08:00 AM - 17:00 pm<br />
-                Saturday: 09:00 AM - 15:00 pm<br />
-                Sunday: Closed
-              </p>
-            </div>
-          </div>
-          <!-- /.widget -->
-        </div>
-        <!-- /.col-md-4 -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.footer-widgets -->
-
-  <!-- Go Top -->
-  <a class="go-top style1"><i class="zmdi zmdi-long-arrow-up"></i></a>
-</footer>
-<!-- Bottom -->
-<div class="bottom">
+<footer class="space-pt footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
-        <div class="copyright">
-          <p>
-            Copyright ©2016
-            <a href="http://themeforest.net/user/vinawebsolutions" target="_blank">Vina Web Solutions Company.</a> All Rights Reserved.
-          </p>
+      <div class="col-lg-3 col-md-6">
+        <a href="index.html" class="footer-logo"><img class="img-fluid" src="{% static 'base' %}/images/logo.svg" alt="" /></a>
+        <p>There’s nothing in this story to make us think he was dreaming about riches.</p>
+        <div class="social-icon mt-3 mt-md-5">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- /.col-md-12 -->
+      <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+        <h6 class="text-primary">Useful Links</h6>
+        <div class="footer-useful-List">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="about-us.html">About</a>
+            </li>
+            <li>
+              <a href="team.html">Team</a>
+            </li>
+            <li>
+              <a href="before-after.html">Before After</a>
+            </li>
+            <li>
+              <a href="cost-calculator.html">Cost Calculator</a>
+            </li>
+            <li>
+              <a href="working-hours.html">Working Hours</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="appointment.html">Appointment</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="timetable.html">Timetable</a>
+            </li>
+            <li>
+              <a href="departments.html">Departments</a>
+            </li>
+            <li>
+              <a href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <h6 class="text-primary">Our Newsletter</h6>
+        <div class="footer-contact-info">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="fas fa-fw fa-map-marker-alt text-primary"></i><span>594 E. Whitemarsh Street Mchenry, IL 60050</span>
+            </li>
+            <li>
+              <i class="fas fa-fw fa-phone-alt text-primary"></i><span>0123-456-789</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p>Sign up to our newsletter to get the latest news and offers.</p>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter your email" />
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+        <h6 class="text-primary">Opening Hours</h6>
+        <div class="opening-time">
+          <ul class="list-unstyled">
+            <li>
+              <i class="far fa-clock pe-1 text-primary"></i> Mon - Tue<span class="float-end">08:30 - 18:30</span>
+            </li>
+            <li>
+              <i class="far fa-clock pe-1 text-primary"></i> Wed- Thu<span class="float-end">08:30 - 18:30</span>
+            </li>
+            <li>
+              <i class="far fa-clock pe-1 text-primary"></i> Friday<span class="float-end">08:30 - 18:30</span>
+            </li>
+            <li>
+              <i class="far fa-clock pe-1 text-primary"></i> Saturday<span class="float-end">08:30 - 18:30</span>
+            </li>
+            <li>
+              <i class="far fa-clock pe-1 text-primary"></i> Sunday<span class="float-end">09:30 - 15:30</span>
+            </li>
+            <li class="text-primary">
+              Emergency<span class="float-end">24 hours</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- /.row -->
   </div>
-  <!-- /.container -->
-</div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center copyright text-md-start mb-3 mb-md-0">
+          <p class="mb-0">
+            &copy; Copyright <span id="copyright"><script>
+                                                    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+                                                  </script></span> <a href="index.html">medileaf</a> All Rights Reserved
+          </p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="">
+            <ul class="list-unstyled list-inline mb-0">
+              <li class="list-inline-item mb-0">
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+              </li>
+              <li class="list-inline-item mb-0">
+                <a href="#">FAQ</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -4,9 +4,21 @@ from core.models import SingletonModel
 
 
 class Slide(models.Model):
+    CHOICES_TYPE = (
+        ('1', 'FIRST'),
+        ('2', 'SECOND'),
+        ('3', 'THIRD')
+    )
+
     title = models.CharField('Başlık', max_length=128)
+    subtitle = models.CharField('Alt başlık', max_length=128)
     image = models.ImageField('Görsel', upload_to='base/slide/image/')
-    link = models.URLField('Link')
+    type = models.CharField(choices=CHOICES_TYPE, max_length=12)
+
+    # non-required fields
+    show_button = models.BooleanField('Buton gösterilsinmi?', default=False)
+    button_text = models.CharField('Buton metni', max_length=36, blank=True, null=True)  # noqa
+    button_link = models.URLField('Link', blank=True, null=True)
 
     class Meta:
         verbose_name = 'Stayt'
