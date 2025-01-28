@@ -11,5 +11,5 @@ def get_service_categories():
 
 
 @register.simple_tag
-def get_services(category_id):
-    return models.ServiceCategory.objects.get(id=category_id).services
+def get_social_accounts():
+    return models.SocialAccount.objects.all()

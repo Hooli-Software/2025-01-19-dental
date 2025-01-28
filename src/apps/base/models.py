@@ -69,7 +69,7 @@ class Portfolio(models.Model):
 
 
 class SocialAccount(models.Model):
-    icon = models.CharField('Font awesome ikon kodu', max_length=128)
+    icon = models.TextField('SVG kodu')
     title = models.CharField('Başlık', max_length=255)
     link = models.URLField('Link')
 

@@ -1,4 +1,5 @@
 {% load static %}
+{% load objects %}
 
 <footer class="space-pt bg-light footer position-relative">
   <div class="container">
@@ -8,21 +9,12 @@
         <p>There’s nothing in this story to make us think he was dreaming about riches.</p>
         <div class="social-icon mt-3 mt-md-5">
           <ul>
-            <li>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-github"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-dribbble"></i></a>
-            </li>
+            {% get_social_accounts as social_accounts %}
+            {% for social_account in social_accounts %}
+              <li>
+                <a href="{{ social_account.link }}"><i class="{{ social_account.icon }}"></i></a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
