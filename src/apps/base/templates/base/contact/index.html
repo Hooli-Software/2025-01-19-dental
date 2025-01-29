@@ -3,7 +3,10 @@
 {% load static %}
 {% load objects %}
 
+
 {% block content %}
+{% get_contact_info as contact_info %}
+
   <!--   =================================
     banner    -->
   <section class="inner-banner bg-light">
@@ -36,8 +39,8 @@
           <!-- Get In Touch -->
           <div class="contact-info">
             <div class="section-title text-sm-start text-center">
-              <h3>Get In Touch With Us</h3>
-              <p>The best way is to develop and follow a plan. Start with your goals in mind and then work backwards to develop the plan.</p>
+              <h3>İletişim bilgileri</h3>
+              <p>Sağlık, sadece maddi bir değerle ölçülemez. Zaman, emek ve özveri gerektirir. Size en iyi hizmeti sunmak için buradayız – bizimle iletişime geçin ve ihtiyaçlarınıza en uygun çözümleri birlikte bulalım.</p>
             </div>
 
             <!-- Address -->
@@ -46,8 +49,8 @@
                 <i class="flaticon-location"></i>
               </div>
               <div class="feature-item-content">
-                <h4 class="feature-item-title">Address</h4>
-                <span>6580 Allison Turnpike Creminfort, AL 32808-4509</span>
+                <h4 class="feature-item-title">Adresimiz</h4>
+                <span>{{ contact_info.address }}</span>
               </div>
             </div>
             <!-- Address -->
@@ -58,9 +61,9 @@
                 <i class="flaticon-call"></i>
               </div>
               <div class="feature-item-content">
-                <h4 class="feature-item-title">Phone</h4>
-                <span>+0123 456 789</span>
-                <span>+704 279 1249</span>
+                <h4 class="feature-item-title">Destek hattı</h4>
+                <span>TEL: {{ contact_info.phone_number_repr }}</span>
+                <span>WHATSAPP: {{ contact_info.phone_number_wa_repr }}</span>
               </div>
             </div>
             <!-- Phone -->
@@ -71,9 +74,8 @@
                 <i class="flaticon-email"></i>
               </div>
               <div class="feature-item-content">
-                <h4 class="feature-item-title">Email</h4>
-                <span>support@medileaf.com</span>
-                <span>letstalk@medileaf.com</span>
+                <h4 class="feature-item-title">E-posta</h4>
+                <span>{{ contact_info.email }}</span>
               </div>
             </div>
             <!-- Email -->
@@ -84,8 +86,8 @@
           <!-- Contact-form -->
           <div class="contact-form ms-lg-4">
             <div class="section-title">
-              <h3>We'd love to hear from you</h3>
-              <p>The price is something not necessarily defined as financial. It could be time, effort, sacrifice, money or perhaps, something else.</p>
+              <h3>Sizin İçin Buradayız</h3>
+              <p>Sağlığınızı önemsiyoruz ve size en iyi hizmeti sunmak için buradayız. Bizimle iletişime geçmekten çekinmeyin – sorularınızı yanıtlamaktan memnuniyet duyarız.</p>
             </div>
             <form id="waForm">
               <div class="row align-items-center">
