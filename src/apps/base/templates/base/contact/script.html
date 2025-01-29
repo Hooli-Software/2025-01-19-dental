@@ -20,13 +20,11 @@
       const service = $(this).find("select[name='service']").val();
       const serviceString = services[service] ? services[service] : 'Hizmet seçilmedi' 
   
-      const text = encodeURIComponent(`
-  Merhaba, adım ${fullName}, implantclinic.com.tr web sitesinden size ulaşıyorum. Hizmetinizden yararlanmak istiyorum: ${serviceString}.
+      const text = encodeURIComponent(`Merhaba, adım ${fullName}, implantclinic.com.tr web sitesinden size ulaşıyorum. Hizmetinizden yararlanmak istiyorum: ${serviceString}.
   
   Aşağıda iletişim bilgilerimi bulabilirsiniz:        
   - Telefon numarası: ${phone}
-  - E-posta: ${email}
-      `);
+  - E-posta: ${email}`);
       {% get_contact_info as contact_info %}
       const whatsappUrl = `https://api.whatsapp.com/send?phone={{ contact_info.phone_number_wa }}&text=${text}`
       
