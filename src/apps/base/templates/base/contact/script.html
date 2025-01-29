@@ -1,0 +1,36 @@
+{% load objects %}
+
+<script>
+    $( "#waForm" ).on( "submit", function( event ) {
+      event.preventDefault();
+      
+      const services = new Object({
+        {% get_service_categories as service_categories %}
+        {% for service_category in service_categories %}
+          {% for service in service_category.services.all %}
+            "{{ service.id }}": "{{ service.title }} ({{service.price}}$)",
+          {% endfor %}
+        {% endfor %}
+      })
+  
+      const fullName = $(this).find("input[name='full_name']").val();
+      const email = $(this).find("input[name='email']").val();
+      const phone = $(this).find("input[name='phone']").val();
+  
+      const service = $(this).find("select[name='service']").val();
+      const serviceString = services[service] ? services[service] : 'Hizmet seçilmedi' 
+  
+      const text = encodeURIComponent(`
+  Merhaba, adım ${fullName}, implantclinic.com.tr web sitesinden size ulaşıyorum. Hizmetinizden yararlanmak istiyorum: ${serviceString}.
+  
+  Aşağıda iletişim bilgilerimi bulabilirsiniz:        
+  - Telefon numarası: ${phone}
+  - E-posta: ${email}
+      `);
+      {% get_contact_info as contact_info %}
+      const whatsappUrl = `https://api.whatsapp.com/send?phone={{ contact_info.phone_number_wa }}&text=${text}`
+      
+      window.location.href = whatsappUrl
+    });
+  </script>
+  
