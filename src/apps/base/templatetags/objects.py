@@ -23,3 +23,8 @@ def get_contact_info():
 @register.simple_tag
 def get_doctor_info():
     return models.DoctorInfo.load()
+
+
+@register.simple_tag
+def get_faq():
+    return models.FAQ.objects.all()

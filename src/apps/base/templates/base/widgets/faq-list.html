@@ -1,0 +1,25 @@
+<div class="accordion mb-xl-5" id="accordion">
+    {% for question in faq %}
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="accordion-title mb-0">
+            <button class="btn btn-link d-flex align-items-center me-auto" data-bs-toggle="collapse" data-bs-target="#collapse{{question.id}}" aria-expanded="true" aria-controls="collapseOne">
+              {{ forloop.counter }}. {{question.question}}
+            </button>
+          </h5>
+        </div>
+        <div id="collapse{{question.id}}" class="collapse {% if forloop.counter == 1 %}show{% endif %} accordion-content" aria-labelledby="headingOne" data-bs-parent="#accordion">
+          <div class="card-body">
+            <p class="mb-0">
+              {{ question.answer }}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    {% if view_more %}
+        <div class="mt-4">
+        <a class="btn btn-link" href="{% url 'faq' %}">Daha fazlası için tıklayın...</a>
+        </div>
+    {% endif %}
+  </div>

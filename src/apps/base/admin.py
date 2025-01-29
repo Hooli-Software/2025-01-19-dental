@@ -47,12 +47,20 @@ class SocialAccountsAdmin(admin.ModelAdmin):
     )
 
 
+@admin.register(models.FAQ)
+class FAQAdmin(admin.ModelAdmin):
+    list_display = (
+        'question',
+        'answer'
+    )
+
+
 @admin.register(models.DoctorInfo)
 class DoctorInfoAdmin(admin.ModelAdmin):
     list_display = (
         'full_name',
         'area',
-        'paragraph'
+        'slogan'
     )
 
 

@@ -24,8 +24,8 @@
     {% include './header.html' %}
     {% block content %}
     {% endblock %}
-    {% include './footer.html' %}
-    <a id="back-to-top" class="back-to-top" href="#"><i class="fas fa-angle-up"></i></a>
+    {% include './footer.html' with footer_class=footer_class %}
+    <a id="back-to-top" class="back-to-top bg-light text-dark" href="#"><i class="fas fa-angle-up"></i></a>
     <script src="{% static 'base' %}/js/jquery-3.6.0.min.js"></script>
     <script src="{% static 'base' %}/js/popper/popper.min.js"></script>
     <script src="{% static 'base' %}/js/bootstrap/bootstrap.min.js"></script>

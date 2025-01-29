@@ -78,6 +78,18 @@ class SocialAccount(models.Model):
         verbose_name_plural = 'Sosyal medya hesapları'
 
 
+class FAQ(models.Model):
+    question = models.TextField('Soru')
+    answer = models.TextField('Cevap')
+
+    class Meta:
+        verbose_name = 'Sıkça sorulan soru'
+        verbose_name_plural = 'Sıkça sorulan sorular'
+
+    def __str__(self):
+        return self.question
+
+
 class DoctorInfo(SingletonModel):
     full_name = models.CharField('Adı soyadı', max_length=128)
     area = models.CharField('Uzmanlık alanı', max_length=128)
