@@ -82,6 +82,8 @@ class DoctorInfo(SingletonModel):
     full_name = models.CharField('Adı soyadı', max_length=128)
     area = models.CharField('Uzmanlık alanı', max_length=128)
     paragraph = models.TextField('Kısa paragraf')
+    logo = models.ImageField('Logo', upload_to='base/doctor-info/logo/')
+    slogan = models.TextField('Slogan')
 
     class Meta:
         verbose_name = 'Doktor bilgileri'
@@ -95,6 +97,7 @@ class ContactInfo(SingletonModel):
     phone_number_wa_repr = models.CharField('Whatsapp numarası (metin)', max_length=128)  # noqa
     email = models.EmailField('E-posta adresi')
     address = models.TextField('Adres')
+    address_gm_src = models.TextField('Google harita iframe linki')
 
     class Meta:
         verbose_name = 'İletişim bilgileri'

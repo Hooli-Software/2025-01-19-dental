@@ -18,3 +18,8 @@ def get_social_accounts():
 @register.simple_tag
 def get_contact_info():
     return models.ContactInfo.load()
+
+
+@register.simple_tag
+def get_doctor_info():
+    return models.DoctorInfo.load()
