@@ -2,6 +2,7 @@
 
 {% load static %}
 {% load objects %}
+{% load i18n %}
 
 
 {% block content %}
@@ -20,7 +21,7 @@
             <li class="breadcrumb-item active">
               <i class="fas fa-chevron-right"></i>
               &nbsp;
-              <span>İletişim</span>
+              <span>{% trans 'contacts' %}</span>
             </li>
           </ol>
         </div>
@@ -39,8 +40,14 @@
           <!-- Get In Touch -->
           <div class="contact-info">
             <div class="section-title text-sm-start text-center">
-              <h3>İletişim bilgileri</h3>
-              <p>Sağlık, sadece maddi bir değerle ölçülemez. Zaman, emek ve özveri gerektirir. Size en iyi hizmeti sunmak için buradayız – bizimle iletişime geçin ve ihtiyaçlarınıza en uygun çözümleri birlikte bulalım.</p>
+              <h3>
+                {% trans 'contacts__heading1' %}
+                {% comment %} İletişim bilgileri {% endcomment %}
+              </h3>
+              <p>
+                {% trans 'contacts__p1' %}
+                {% comment %} Sağlık, sadece maddi bir değerle ölçülemez. Zaman, emek ve özveri gerektirir. Size en iyi hizmeti sunmak için buradayız – bizimle iletişime geçin ve ihtiyaçlarınıza en uygun çözümleri birlikte bulalım. {% endcomment %}
+              </p>
             </div>
 
             <!-- Address -->
@@ -49,7 +56,10 @@
                 <i class="flaticon-location"></i>
               </div>
               <div class="feature-item-content">
-                <h4 class="feature-item-title">Adresimiz</h4>
+                <h4 class="feature-item-title">
+                  {% trans 'contacts__address' %}
+                  {% comment %} Adresimiz {% endcomment %}
+                </h4>
                 <span>{{ contact_info.address }}</span>
               </div>
             </div>
@@ -61,7 +71,10 @@
                 <i class="flaticon-call"></i>
               </div>
               <div class="feature-item-content">
-                <h4 class="feature-item-title">Destek hattı</h4>
+                <h4 class="feature-item-title">
+                  {% trans 'contacts__phone' %}
+                  {% comment %} Destek hattı {% endcomment %}
+                </h4>
                 <span>TEL: {{ contact_info.phone_number_repr }}</span>
                 <span>WHATSAPP: {{ contact_info.phone_number_wa_repr }}</span>
               </div>
@@ -74,7 +87,10 @@
                 <i class="flaticon-email"></i>
               </div>
               <div class="feature-item-content">
-                <h4 class="feature-item-title">E-posta</h4>
+                <h4 class="feature-item-title">
+                  {% trans 'contacts__email' %}
+                  {% comment %} E-posta {% endcomment %}
+                </h4>
                 <span>{{ contact_info.email }}</span>
               </div>
             </div>
@@ -86,8 +102,14 @@
           <!-- Contact-form -->
           <div class="contact-form ms-lg-4">
             <div class="section-title">
-              <h3>Sizin İçin Buradayız</h3>
-              <p>Sağlığınızı önemsiyoruz ve size en iyi hizmeti sunmak için buradayız. Bizimle iletişime geçmekten çekinmeyin – sorularınızı yanıtlamaktan memnuniyet duyarız.</p>
+              <h3>
+                {% trans 'contacts__heading2' %}
+                {% comment %} Sizin İçin Buradayız {% endcomment %}
+              </h3>
+              <p>
+                {% trans 'contacts__p2' %}
+                {% comment %} Sağlığınızı önemsiyoruz ve size en iyi hizmeti sunmak için buradayız. Bizimle iletişime geçmekten çekinmeyin – sorularınızı yanıtlamaktan memnuniyet duyarız. {% endcomment %}
+              </p>
             </div>
             <form id="waForm">
               <div class="row align-items-center">
@@ -107,7 +129,10 @@
                     tabindex="-1"
                     aria-hidden="true"
                   >
-                    <option value="0" selected="selected">Hizmet seçilmedi (seçiniz)</option>
+                    <option value="0" selected="selected">
+                      {% trans 'contacts__select-service' %}
+                      {% comment %} Hizmet seçilmedi (seçiniz) {% endcomment %}
+                    </option>
                     {% get_service_categories as service_categories %}
                     {% for service_category in service_categories %}
                       <optgroup label="{{ service_category.title }}">
@@ -140,7 +165,8 @@
                   <button type="submit" class="btn btn-outline-primary">
                     <i class="fa-brands fa-whatsapp"></i>
                     &nbsp;
-                    Gönder
+                    {% trans 'contacts__submit' %}
+                    {% comment %} Gönder {% endcomment %}
                   </button>
                 </div>
               </div>

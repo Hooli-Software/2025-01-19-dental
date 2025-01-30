@@ -2,6 +2,7 @@
 
 {% load static %}
 {% load objects %}
+{% load i18n %}
 
 {% block content %}
 
@@ -18,7 +19,10 @@
           <li class="breadcrumb-item active">
             <i class="fas fa-chevron-right"></i>
             &nbsp;
-            <span>Fiyat listesi</span>
+            <span>
+              {% trans 'price-list' %}
+              {% comment %} Fiyat listesi {% endcomment %}
+            </span>
           </li>
         </ol>
       </div>

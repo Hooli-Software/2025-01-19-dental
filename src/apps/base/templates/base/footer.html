@@ -1,5 +1,6 @@
 {% load static %}
 {% load objects %}
+{% load i18n %}
 
 {% get_contact_info as contact_info %}
 {% get_doctor_info as doctor_info %}
@@ -23,37 +24,64 @@
       </div>
       <div class="col-lg-2 col-md-0"></div>
       <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-        <h6 class="text-primary">Sayfalar</h6>
+        <h6 class="text-primary">
+          {% trans 'footer__heading-pages' %}
+          {% comment %} Sayfalar {% endcomment %}
+        </h6>
         <div class="footer-useful-List">
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="{% url 'home' %}">Ana sayfa</a>
+              <a href="{% url 'home' %}">
+                {% trans 'footer__link-home' %}
+                {% comment %} Ana sayfa {% endcomment %}
+              </a>
             </li>
             <li>
-              <a href="{% url 'about' %}">Doktorumuz</a>
+              <a href="{% url 'about' %}">
+                {% trans 'footer__link-doctor' %}
+                {% comment %} Doktorumuz {% endcomment %}
+              </a>
             </li>
             <li>
-              <a href="{% url 'price-list' %}">Fiyat listesi</a>
+              <a href="{% url 'price-list' %}">
+                {% trans 'footer__link-price-list' %}
+                {% comment %} Fiyat listesi {% endcomment %}
+              </a>
             </li>
             <li>
-              <a href="{% url 'contact' %}">İletişim</a>
+              <a href="{% url 'contact' %}">
+                {% trans 'footer__link-contact' %}
+                {% comment %} İletişim {% endcomment %}
+              </a>
             </li>
           </ul>
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="{% url 'gallery' %}">Galeri</a>
+              <a href="{% url 'gallery' %}">
+                {% trans 'footer__link-gallery' %}
+                {% comment %} Galeri {% endcomment %}
+              </a>
             </li>
             <li>
-              <a href="{% url 'faq' %}">S.S.S.</a>
+              <a href="{% url 'faq' %}">
+                {% trans 'footer__link-faq' %}
+                {% comment %} S.S.S. {% endcomment %}
+              </a>
             </li>
             <li>
-              <a href="{% url 'video-reviews' %}">Mutlu müşteriler</a>
+              <a href="{% url 'video-reviews' %}">
+                {% trans 'footer__link-happy-clients' %}
+                {% comment %} Mutlu müşteriler {% endcomment %}
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-        <h6 class="text-primary">İletişim bilgileri</h6>
+        <h6 class="text-primary">
+          {% trans 'footer__heading-contact-info' %}
+          {% comment %} İletişim bilgileri {% endcomment %}
+        </h6>
         <div class="footer-contact-info">
           <ul class="list-unstyled mb-0">
             <li>

@@ -2,6 +2,7 @@
 
 {% load static %}
 {% load objects %}
+{% load i18n %}
 
 {% block content %}
 
@@ -20,7 +21,10 @@
           <li class="breadcrumb-item active">
             <i class="fas fa-chevron-right"></i>
             &nbsp;
-            <span>Doktorumuz</span>
+            <span>
+              {% trans 'about' %}
+              {% comment %} Doktorumuz {% endcomment %}
+            </span>
           </li>
         </ol>
       </div>
@@ -43,7 +47,10 @@
           <p>{{ doctor_info.paragraph|safe }}</p>
         </div>
         <div class="mt-4 mt-md-5 pe-lg-5">
-          <h2 class="mb-4">İletişim bilgileri</h2>
+          <h2 class="mb-4">
+            {% trans 'about__contacts' %}
+            {% comment %} İletişim bilgileri {% endcomment %}
+          </h2>
           <div class="contact-info">
             <ul class="list-unstyled mb-0">
               <li>
@@ -58,7 +65,10 @@
             </ul>
           </div>
           <div class="social-icon social-icon-square d-inline-block mt-5">
-            <h2 class="mb-4">Medya hesapları</h2>
+            <h2 class="mb-4">
+              {% trans 'about__socials' %}
+              {% comment %} Medya hesapları {% endcomment %}
+            </h2>
             <ul>
               {% for social_account in social_accounts %}
                 <li>

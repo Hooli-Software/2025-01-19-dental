@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 05:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps/base/templates/base/about/index.html:25
+msgid "about"
+msgstr "Doktorumuz"
+
+#: apps/base/templates/base/about/index.html:52
+#| msgid "footer__link-contact"
+msgid "about__contacts"
+msgstr "İletişim bilgileri"
+
+#: apps/base/templates/base/about/index.html:71
+msgid "about__socials"
+msgstr "Sosyal medya"
+
+#: apps/base/templates/base/contact/index.html:24
+msgid "contacts"
+msgstr "İletişime geçiniz"
+
+#: apps/base/templates/base/contact/index.html:44
+#| msgid "faq__heading"
+msgid "contacts__heading1"
+msgstr "İletişim bilgileri"
+
+#: apps/base/templates/base/contact/index.html:49
+msgid "contacts__p1"
+msgstr "Sağlık, sadece maddi bir değerle ölçülemez. Zaman, emek ve özveri gerektirir. Size en iyi hizmeti sunmak için buradayız – bizimle iletişime geçin ve ihtiyaçlarınıza en uygun çözümleri birlikte bulalım."
+
+#: apps/base/templates/base/contact/index.html:62
+msgid "contacts__address"
+msgstr "Adresimiz"
+
+#: apps/base/templates/base/contact/index.html:78
+msgid "contacts__phone"
+msgstr "Destek hattı"
+
+#: apps/base/templates/base/contact/index.html:95
+msgid "contacts__email"
+msgstr "E-posta"
+
+#: apps/base/templates/base/contact/index.html:111
+#| msgid "faq__heading"
+msgid "contacts__heading2"
+msgstr "Sizin İçin Buradayız"
+
+#: apps/base/templates/base/contact/index.html:116
+msgid "contacts__p2"
+msgstr "Sağlığınızı önemsiyoruz ve size en iyi hizmeti sunmak için buradayız. Bizimle iletişime geçmekten çekinmeyin – sorularınızı yanıtlamaktan memnuniyet duyarız."
+
+#: apps/base/templates/base/contact/index.html:140
+msgid "contacts__select-service"
+msgstr "Hizmet seçiniz (seçilmedi)"
+
+#: apps/base/templates/base/contact/index.html:176
+msgid "contacts__submit"
+msgstr "Gönder"
+
+#: apps/base/templates/base/faq/index.html:23
+msgid "faq"
+msgstr "Sıkça sorulan sorular"
+
+#: apps/base/templates/base/footer.html:28
+msgid "footer__heading-pages"
+msgstr "Sayfalar"
+
+#: apps/base/templates/base/footer.html:36
+msgid "footer__link-home"
+msgstr "Ana sayfa"
+
+#: apps/base/templates/base/footer.html:43
+msgid "footer__link-doctor"
+msgstr "Doktorumuz"
+
+#: apps/base/templates/base/footer.html:50
+msgid "footer__link-price-list"
+msgstr "Fiyat listesi"
+
+#: apps/base/templates/base/footer.html:57
+msgid "footer__link-contact"
+msgstr "İletişim bilgileri"
+
+#: apps/base/templates/base/footer.html:66
+msgid "footer__link-gallery"
+msgstr "Galerimiz"
+
+#: apps/base/templates/base/footer.html:73
+msgid "footer__link-faq"
+msgstr "S.S.S."
+
+#: apps/base/templates/base/footer.html:80
+msgid "footer__link-happy-clients"
+msgstr "Video-yorumlar"
+
+#: apps/base/templates/base/footer.html:90
+msgid "footer__heading-contact-info"
+msgstr "İletişim bilgileri"
+
+#: apps/base/templates/base/gallery/index.html:19
+msgid "galery"
+msgstr "Galerimiz"
+
+#: apps/base/templates/base/gallery/index.html:36
+#| msgid "faq__heading"
+msgid "gallery__heading"
+msgstr "Galerimiz"
+
+#: apps/base/templates/base/gallery/index.html:48
+msgid "gallery__view-all"
+msgstr "Hepsini gör"
+
+#: apps/base/templates/base/header.html:100
+msgid "header__link-home"
+msgstr "Ana sayfa"
+
+#: apps/base/templates/base/header.html:107
+msgid "header__link-price-list"
+msgstr "Fiyat listesi"
+
+#: apps/base/templates/base/header.html:114
+msgid "header__link-clinic"
+msgstr "Kliniğimiz"
+
+#: apps/base/templates/base/header.html:123
+msgid "header__link-doctor"
+msgstr "Doktorumuz"
+
+#: apps/base/templates/base/header.html:130
+msgid "header__link-happy-customers"
+msgstr "Video-yorumlar"
+
+#: apps/base/templates/base/header.html:137
+msgid "header__link-gallery"
+msgstr "Galerimiz"
+
+#: apps/base/templates/base/header.html:146
+msgid "header__link-contact"
+msgstr "İletişim"
+
+#: apps/base/templates/base/header.html:153
+msgid "header__link-faq"
+msgstr "S.S.S."
+
+#: apps/base/templates/base/home/banner.html:14
+msgid "home__banner-heading"
+msgstr "Gülüşünüz İçin Özen"
+
+#: apps/base/templates/base/home/banner.html:19
+msgid "home__banner-subheading"
+msgstr "Diş sağlığınız için modern çözümler"
+
+#: apps/base/templates/base/home/banner.html:22
+msgid "home__banner-button-price-list"
+msgstr "FİYAT LİSTESİ"
+
+#: apps/base/templates/base/home/faq.html:12
+msgid "faq__heading"
+msgstr "Sıkça sorulan sorular"
+
+#: apps/base/templates/base/price-list/index.html:23
+#| msgid "footer__link-price-list"
+msgid "price-list"
+msgstr "Fiyat listesi"
+
+#: apps/base/templates/base/video-reviews/index.html:19
+msgid "video-reviews"
+msgstr "Video-yorumlar"
+
+#: apps/base/templates/base/video-reviews/index.html:36
+msgid "video-reviews__heading"
+msgstr "Müşterilerimizi görün"
+
+#: apps/base/templates/base/widgets/faq-list.html:25
+msgid "faq__view-more"
+msgstr "Daha fazla görmek için tıklayın..."
+
+#: apps/base/templates/base/widgets/price-list.html:21
+msgid "price-list__column-service-title"
+msgstr "HİZMET ADI"
+
+#: apps/base/templates/base/widgets/price-list.html:26
+msgid "price-list__column-service-price"
+msgstr "FİYAT"
+
+#: core/settings.py:107
+msgid "English"
+msgstr ""
+
+#: core/settings.py:108
+msgid "Türkçe"
+msgstr ""
+
+#: core/settings.py:109
+msgid "Русский"
+msgstr ""
+

@@ -2,6 +2,7 @@
 
 {% load static %}
 {% load objects %}
+{% load i18n %}
 
 
 {% block content %}
@@ -16,7 +17,12 @@
             <a href="{% url 'home' %}"><i class="fas fa-home"></i></a>
           </li>
           <li class="breadcrumb-item active">
-            <i class="fas fa-chevron-right"></i>&nbsp;&nbsp;<span>Sıkça sorulan sorular</span>
+            <i class="fas fa-chevron-right"></i>
+            &nbsp;&nbsp;
+            <span>
+              {% trans 'faq' %}
+              {% comment %} Sıkça sorulan sorular {% endcomment %}
+            </span>
           </li>
         </ol>
       </div>

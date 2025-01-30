@@ -2,6 +2,7 @@
 
 {% load static %}
 {% load objects %}
+{% load i18n %}
 
 {% block content %}
   <section class="inner-banner bg-light">
@@ -13,7 +14,11 @@
               <a href="{% url 'home' %}"><i class="fas fa-home"></i></a>
             </li>
             <li class="breadcrumb-item active">
-              <i class="fas fa-chevron-right"></i>&nbsp;&nbsp;<span>Mutlu Müşteriler</span>
+              <i class="fas fa-chevron-right"></i>&nbsp;&nbsp;
+              <span>
+                {% trans 'video-reviews' %}
+                {% comment %} Mutlu Müşteriler {% endcomment %}
+              </span>
             </li>
           </ol>
         </div>
@@ -26,7 +31,10 @@
       <div class="row justify-content-center mb-4">
         <div class="col-lg-9 col-md-10 text-center">
           <div class="section-title">
-            <h2 class="title">Mutlu Müşterilerimizden Video Görüşleri</h2>
+            <h2 class="title">
+              {% trans 'video-reviews__heading' %}
+              {% comment %} Mutlu Müşterilerimizden Video Görüşleri {% endcomment %}
+            </h2>
           </div>
         </div>
       </div>

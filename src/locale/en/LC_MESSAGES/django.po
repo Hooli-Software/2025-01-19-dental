@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 05:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/base/templates/base/about/index.html:25
+msgid "about"
+msgstr "Our doctor"
+
+#: apps/base/templates/base/about/index.html:52
+#| msgid "footer__link-contact"
+msgid "about__contacts"
+msgstr "Contact us"
+
+#: apps/base/templates/base/about/index.html:71
+msgid "about__socials"
+msgstr "Social accounts"
+
+#: apps/base/templates/base/contact/index.html:24
+msgid "contacts"
+msgstr "Contact us"
+
+#: apps/base/templates/base/contact/index.html:44
+#| msgid "faq__heading"
+msgid "contacts__heading1"
+msgstr "Contact us"
+
+#: apps/base/templates/base/contact/index.html:49
+msgid "contacts__p1"
+msgstr "Health cannot be measured by material value alone. It requires time, effort, and dedication. We are here to provide you with the best service – contact us, and let's find the most suitable solutions for your needs together."
+
+#: apps/base/templates/base/contact/index.html:62
+msgid "contacts__address"
+msgstr "Address"
+
+#: apps/base/templates/base/contact/index.html:78
+msgid "contacts__phone"
+msgstr "Call us"
+
+#: apps/base/templates/base/contact/index.html:95
+msgid "contacts__email"
+msgstr "E-mail"
+
+#: apps/base/templates/base/contact/index.html:111
+#| msgid "faq__heading"
+msgid "contacts__heading2"
+msgstr "We're here to help you!"
+
+#: apps/base/templates/base/contact/index.html:116
+msgid "contacts__p2"
+msgstr "We care about your health and are here to provide you with the best service. Don't hesitate to contact us – we would be happy to answer your questions."
+
+#: apps/base/templates/base/contact/index.html:140
+msgid "contacts__select-service"
+msgstr "Select service"
+
+#: apps/base/templates/base/contact/index.html:176
+msgid "contacts__submit"
+msgstr "Submit"
+
+#: apps/base/templates/base/faq/index.html:23
+msgid "faq"
+msgstr "FAQ"
+
+#: apps/base/templates/base/footer.html:28
+msgid "footer__heading-pages"
+msgstr "Important pages"
+
+#: apps/base/templates/base/footer.html:36
+msgid "footer__link-home"
+msgstr "Home page"
+
+#: apps/base/templates/base/footer.html:43
+msgid "footer__link-doctor"
+msgstr "Our doctor"
+
+#: apps/base/templates/base/footer.html:50
+msgid "footer__link-price-list"
+msgstr "Our price list"
+
+#: apps/base/templates/base/footer.html:57
+msgid "footer__link-contact"
+msgstr "Contact us"
+
+#: apps/base/templates/base/footer.html:66
+msgid "footer__link-gallery"
+msgstr "Our gallery"
+
+#: apps/base/templates/base/footer.html:73
+msgid "footer__link-faq"
+msgstr "FAQ"
+
+#: apps/base/templates/base/footer.html:80
+msgid "footer__link-happy-clients"
+msgstr "Client videos"
+
+#: apps/base/templates/base/footer.html:90
+msgid "footer__heading-contact-info"
+msgstr "Contact us"
+
+#: apps/base/templates/base/gallery/index.html:19
+msgid "galery"
+msgstr "Our gallery"
+
+#: apps/base/templates/base/gallery/index.html:36
+#| msgid "faq__heading"
+msgid "gallery__heading"
+msgstr "Gallery"
+
+#: apps/base/templates/base/gallery/index.html:48
+msgid "gallery__view-all"
+msgstr "View all"
+
+#: apps/base/templates/base/header.html:100
+msgid "header__link-home"
+msgstr "Home page"
+
+#: apps/base/templates/base/header.html:107
+msgid "header__link-price-list"
+msgstr "Price list"
+
+#: apps/base/templates/base/header.html:114
+msgid "header__link-clinic"
+msgstr "Our clinic"
+
+#: apps/base/templates/base/header.html:123
+msgid "header__link-doctor"
+msgstr "Our doctor"
+
+#: apps/base/templates/base/header.html:130
+msgid "header__link-happy-customers"
+msgstr "Client videos"
+
+#: apps/base/templates/base/header.html:137
+msgid "header__link-gallery"
+msgstr "Our gallery"
+
+#: apps/base/templates/base/header.html:146
+msgid "header__link-contact"
+msgstr "Contact us"
+
+#: apps/base/templates/base/header.html:153
+msgid "header__link-faq"
+msgstr "FAQ"
+
+#: apps/base/templates/base/home/banner.html:14
+msgid "home__banner-heading"
+msgstr "Care for Your Smile"
+
+#: apps/base/templates/base/home/banner.html:19
+msgid "home__banner-subheading"
+msgstr "Modern solutions for your dental health."
+
+#: apps/base/templates/base/home/banner.html:22
+msgid "home__banner-button-price-list"
+msgstr "SEE PRICE LIST"
+
+#: apps/base/templates/base/home/faq.html:12
+msgid "faq__heading"
+msgstr "Frequently asked questions"
+
+#: apps/base/templates/base/price-list/index.html:23
+#| msgid "footer__link-price-list"
+msgid "price-list"
+msgstr "Our price list"
+
+#: apps/base/templates/base/video-reviews/index.html:19
+msgid "video-reviews"
+msgstr "Video-reviews"
+
+#: apps/base/templates/base/video-reviews/index.html:36
+msgid "video-reviews__heading"
+msgstr "Video-reviews from our clients"
+
+#: apps/base/templates/base/widgets/faq-list.html:25
+msgid "faq__view-more"
+msgstr "Follow link to see more..."
+
+#: apps/base/templates/base/widgets/price-list.html:21
+msgid "price-list__column-service-title"
+msgstr "SERVICE NAME"
+
+#: apps/base/templates/base/widgets/price-list.html:26
+msgid "price-list__column-service-price"
+msgstr "PRICE"
+
+#: core/settings.py:107
+msgid "English"
+msgstr ""
+
+#: core/settings.py:108
+msgid "Türkçe"
+msgstr ""
+
+#: core/settings.py:109
+msgid "Русский"
+msgstr ""

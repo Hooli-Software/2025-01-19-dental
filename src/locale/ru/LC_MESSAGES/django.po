@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-30 05:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: apps/base/templates/base/about/index.html:25
+msgid "about"
+msgstr "Наш доктор"
+
+#: apps/base/templates/base/about/index.html:52
+#| msgid "footer__link-contact"
+msgid "about__contacts"
+msgstr "Свяжитесь с нами"
+
+#: apps/base/templates/base/about/index.html:71
+msgid "about__socials"
+msgstr "Социальные сети"
+
+#: apps/base/templates/base/contact/index.html:24
+msgid "contacts"
+msgstr "Контакты"
+
+#: apps/base/templates/base/contact/index.html:44
+#| msgid "faq__heading"
+msgid "contacts__heading1"
+msgstr "Свяжитесь с нами"
+
+#: apps/base/templates/base/contact/index.html:49
+msgid "contacts__p1"
+msgstr "Здоровье нельзя измерить только материальной ценностью. Оно требует времени, усилий и самоотдачи. Мы здесь, чтобы предоставить вам наилучший сервис – свяжитесь с нами, и вместе мы найдём наилучшие решения для ваших потребностей."
+
+#: apps/base/templates/base/contact/index.html:62
+msgid "contacts__address"
+msgstr "Адрес"
+
+#: apps/base/templates/base/contact/index.html:78
+msgid "contacts__phone"
+msgstr "Горячая линия"
+
+#: apps/base/templates/base/contact/index.html:95
+msgid "contacts__email"
+msgstr "Почта"
+
+#: apps/base/templates/base/contact/index.html:111
+#| msgid "faq__heading"
+msgid "contacts__heading2"
+msgstr "Мы здесь что бы помочь вам!"
+
+#: apps/base/templates/base/contact/index.html:116
+msgid "contacts__p2"
+msgstr "Мы заботимся о вашем здоровье и готовы предоставить вам лучший сервис. Не стесняйтесь связаться с нами – мы будем рады ответить на ваши вопросы."
+
+#: apps/base/templates/base/contact/index.html:140
+msgid "contacts__select-service"
+msgstr "Выберите услугу"
+
+#: apps/base/templates/base/contact/index.html:176
+msgid "contacts__submit"
+msgstr "Отправить"
+
+#: apps/base/templates/base/faq/index.html:23
+msgid "faq"
+msgstr "Часто задаваемые вопросы"
+
+#: apps/base/templates/base/footer.html:28
+msgid "footer__heading-pages"
+msgstr "Что интересного?"
+
+#: apps/base/templates/base/footer.html:36
+msgid "footer__link-home"
+msgstr "Главная страница"
+
+#: apps/base/templates/base/footer.html:43
+msgid "footer__link-doctor"
+msgstr "Наш доктор"
+
+#: apps/base/templates/base/footer.html:50
+msgid "footer__link-price-list"
+msgstr "Прайс-лист"
+
+#: apps/base/templates/base/footer.html:57
+msgid "footer__link-contact"
+msgstr "Свяжитесь с нами"
+
+#: apps/base/templates/base/footer.html:66
+msgid "footer__link-gallery"
+msgstr "Галерея"
+
+#: apps/base/templates/base/footer.html:73
+msgid "footer__link-faq"
+msgstr "Часто задаваемые вопросы"
+
+#: apps/base/templates/base/footer.html:80
+msgid "footer__link-happy-clients"
+msgstr "Видео-отзывы"
+
+#: apps/base/templates/base/footer.html:90
+msgid "footer__heading-contact-info"
+msgstr "Контактная информация"
+
+#: apps/base/templates/base/gallery/index.html:19
+msgid "galery"
+msgstr "Галерея"
+
+#: apps/base/templates/base/gallery/index.html:36
+#| msgid "faq__heading"
+msgid "gallery__heading"
+msgstr "Галерея"
+
+#: apps/base/templates/base/gallery/index.html:48
+msgid "gallery__view-all"
+msgstr "Смотреть всё"
+
+#: apps/base/templates/base/header.html:100
+msgid "header__link-home"
+msgstr "Главная"
+
+#: apps/base/templates/base/header.html:107
+msgid "header__link-price-list"
+msgstr "Прайс-лист"
+
+#: apps/base/templates/base/header.html:114
+msgid "header__link-clinic"
+msgstr "Клиника"
+
+#: apps/base/templates/base/header.html:123
+msgid "header__link-doctor"
+msgstr "Наш доктор"
+
+#: apps/base/templates/base/header.html:130
+msgid "header__link-happy-customers"
+msgstr "Видео-отзывы"
+
+#: apps/base/templates/base/header.html:137
+msgid "header__link-gallery"
+msgstr "Галерея"
+
+#: apps/base/templates/base/header.html:146
+msgid "header__link-contact"
+msgstr "Свяжитесь с нами"
+
+#: apps/base/templates/base/header.html:153
+msgid "header__link-faq"
+msgstr "FAQ"
+
+#: apps/base/templates/base/home/banner.html:14
+msgid "home__banner-heading"
+msgstr "Забота о вашей улыбке"
+
+#: apps/base/templates/base/home/banner.html:19
+msgid "home__banner-subheading"
+msgstr "Современные решения для здоровья ваших зубов"
+
+#: apps/base/templates/base/home/banner.html:22
+msgid "home__banner-button-price-list"
+msgstr "ПРАЙС-ЛИСТ"
+
+#: apps/base/templates/base/home/faq.html:12
+msgid "faq__heading"
+msgstr "Часто задаваемые вопросы"
+
+#: apps/base/templates/base/price-list/index.html:23
+#| msgid "footer__link-price-list"
+msgid "price-list"
+msgstr "Прайс-лист"
+
+#: apps/base/templates/base/video-reviews/index.html:19
+msgid "video-reviews"
+msgstr "Видео-отзывы"
+
+#: apps/base/templates/base/video-reviews/index.html:36
+msgid "video-reviews__heading"
+msgstr "Видео-отзывы наших пациентов"
+
+#: apps/base/templates/base/widgets/faq-list.html:25
+msgid "faq__view-more"
+msgstr "Перейдите что бы увидеть всё..."
+
+#: apps/base/templates/base/widgets/price-list.html:21
+msgid "price-list__column-service-title"
+msgstr "НАЗВАНИЕ"
+
+#: apps/base/templates/base/widgets/price-list.html:26
+msgid "price-list__column-service-price"
+msgstr "СТОИМОСТЬ"
+
+#: core/settings.py:107
+msgid "English"
+msgstr ""
+
+#: core/settings.py:108
+msgid "Türkçe"
+msgstr ""
+
+#: core/settings.py:109
+msgid "Русский"
+msgstr ""

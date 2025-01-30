@@ -1,5 +1,6 @@
 {% load static %}
 {% load objects %}
+{% load i18n %}
 
 
 {% get_service_categories as categories %}
@@ -16,8 +17,14 @@
             <thead>
               <tr>
                 <th scope="col"></th>
-                <th scope="col">TEDAVİ ADI</th>
-                <th scope="col">FİYAT</th>
+                <th scope="col">
+                  {% trans 'price-list__column-service-title' %}
+                  {% comment %} TEDAVİ ADI {% endcomment %}
+                </th>
+                <th scope="col">
+                  {% trans 'price-list__column-service-price' %}
+                  {% comment %} FİYAT {% endcomment %}
+                </th>
               </tr>
             </thead>
             <tbody>

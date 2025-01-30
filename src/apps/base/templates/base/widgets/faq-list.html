@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <div class="accordion mb-xl-5" id="accordion">
     {% for question in faq %}
       <div class="card">
@@ -19,7 +21,10 @@
     {% endfor %}
     {% if view_more %}
         <div class="mt-4">
-        <a class="btn btn-link" href="{% url 'faq' %}">Daha fazlası için tıklayın...</a>
+        <a class="btn btn-link" href="{% url 'faq' %}">
+          {% trans 'faq__view-more' %}
+          {% comment %} Daha fazlası için tıklayın... {% endcomment %}
+        </a>
         </div>
     {% endif %}
   </div>

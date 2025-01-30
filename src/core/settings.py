@@ -1,4 +1,5 @@
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -32,6 +33,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.locale.LocaleMiddleware',  # Включение мультиязычности
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -88,7 +90,7 @@ LANGUAGE_CODE = 'tr'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
@@ -97,3 +99,14 @@ MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOCALE_PATHS = (
+    BASE_DIR / 'locale',
+)
+LANGUAGES = [
+    ('en', _('English')),
+    ('tr', _('Türkçe')),
+    ('ru', _('Русский')),
+]
+
+LANGUAGE_CODE = 'tr'  # Язык по умолчанию

@@ -1,4 +1,5 @@
 {% load objects %}
+{% load i18n %}
 
 {% get_faq as faq %}
 
@@ -7,7 +8,10 @@
     <div class="row">
       <div class="col-xl-12 pe-xl-5 space-pt space-pb left-half-light-bg bg-light">
         <div class="section-title left-divider">
-          <h2>Sıkça sorulan sorular</h2>
+          <h2>
+            {% trans "faq__heading" %}
+            {% comment %} Sıkça sorulan sorular {% endcomment %}
+          </h2>
         </div>
         {% include 'base/widgets/faq-list.html' with faq=faq|slice:":5" view_more=True %}
       </div>
