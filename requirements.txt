@@ -1,5 +1,6 @@
 asgiref==3.8.1
 Django==5.1.5
+django-modeltranslation==0.19.12
 flake8==7.1.1
 mccabe==0.7.0
 pillow==11.1.0
