@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load objects %}
 
 {% block content %}
 <section class="inner-banner bg-light">
@@ -11,7 +12,9 @@
             <a href="{% url 'home' %}"> <i class="fas fa-home"></i> </a>
           </li>
           <li class="breadcrumb-item active">
-            <i class="fas fa-chevron-right"></i>&nbsp;<span> Gallery </span>
+            <i class="fas fa-chevron-right"></i>
+            &nbsp;&nbsp;&nbsp;
+            <span>Galeri</span>
           </li>
         </ol>
       </div>
@@ -24,214 +27,43 @@
     <div class="row justify-content-center">
       <div class="col-lg-9 col-md-10 text-center">
         <div class="section-title">
-          <h2 class="title">Let's have a look at what creativity is!</h2>
+          <h2 class="title">Gülüş Galerisi</h2>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div class="filters-group mb-2 mb-lg-5">
+          {% get_gallery_categories as gallery_categories %}
           <button class="btn-filter active" data-group="all">
-            View All
+            Hepsini gör
           </button>
-          <button class="btn-filter" data-group="dental">Dental</button>
-          <button class="btn-filter" data-group="medicine">Medicine</button>
-          <button class="btn-filter" data-group="orthopaedics">
-            Orthopaedics
-          </button>
-          <button class="btn-filter" data-group="neurology">
-            Neurology
-          </button>
+          {% for gallery_category in gallery_categories %}
+            <button class="btn-filter" data-group="{{gallery_category.id}}">{{ gallery_category.title }}</button>
+          {% endfor %}
         </div>
         <div class="my-shuffle-container popup-gallery full-screen">
-          <!-- Gallery-item-01 START -->
-          <div class="grid-item" data-groups='["neurology"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/01.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/01.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Neurology</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
+          {% for gallery_category in gallery_categories %}
+            {% for image in gallery_category.images.all %}
+              <div class="grid-item" data-groups='["{{gallery_category.id}}"]'>
+                <div class="portfolio-item">
+                  <img class="img-fluid" src="{{image.image.url}}"/>
+                  <div class="portfolio-overlay">
+                    <a
+                      class="portfolio-description portfolio-img"
+                      href="{{image.image.url}}"
+                    >
+                      <div class="portfolio-info">
+                        <span class="icon-btn"
+                          ><i class="fas fa-plus"></i
+                        ></span>
+                      </div>
+                    </a>
                   </div>
-                </a>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- Gallery-item-01 END -->
-
-          <!-- Gallery-item-02 START -->
-          <div class="grid-item" data-groups='["medicine"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/02.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/02.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Medicine</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-02 END -->
-
-          <!-- Gallery-item-03 START -->
-          <div class="grid-item" data-groups='["orthopaedics"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/03.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/03.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Orthopaedics</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-03 END -->
-
-          <!-- Gallery-item-04 START -->
-          <div class="grid-item" data-groups='["neurology"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/06.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/06.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Neurology</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-04 END -->
-
-          <!-- Gallery-item-05 START -->
-          <div class="grid-item" data-groups='["dental"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/04.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/04.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Dental</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-05 END -->
-
-          <!-- Gallery-item-06 START -->
-          <div class="grid-item" data-groups='["medicine"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/05.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/05.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Medicine</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-06 END -->
-
-          <!-- Gallery-item-07 START -->
-          <div class="grid-item" data-groups='["orthopaedics"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/08.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/08.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Orthopaedics</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-07 END -->
-
-          <!-- Gallery-item-08 START -->
-          <div class="grid-item" data-groups='["dental"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/09.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/09.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Dental</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-08 END -->
-
-          <!-- Gallery-item-09 START -->
-          <div class="grid-item" data-groups='["orthopaedics"]'>
-            <div class="portfolio-item">
-              <img class="img-fluid" src="{% static 'base' %}/images/gallery/07.jpg" alt="" />
-              <div class="portfolio-overlay">
-                <a
-                  class="portfolio-description portfolio-img"
-                  href="{% static 'base' %}/images/gallery/07.jpg"
-                >
-                  <div class="portfolio-info">
-                    <span class="portfolio-title">Orthopaedics</span>
-                    <span class="icon-btn"
-                      ><i class="fas fa-plus"></i
-                    ></span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Gallery-item-09 END -->
+            {% endfor %}
+          {% endfor %}
         </div>
       </div>
     </div>

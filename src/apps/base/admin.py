@@ -3,13 +3,6 @@ from django.contrib import admin
 from . import models
 
 
-@admin.register(models.Advantage)
-class AdvantageAdmin(admin.ModelAdmin):
-    list_display = (
-        'title',
-    )
-
-
 class ServiceTabularInline(admin.TabularInline):
     model = models.Service
 
@@ -31,14 +24,6 @@ class ServiceAdmin(admin.ModelAdmin):
     )
 
 
-@admin.register(models.Portfolio)
-class PortfolioAdmin(admin.ModelAdmin):
-    list_display = (
-        'title',
-        'service'
-    )
-
-
 @admin.register(models.SocialAccount)
 class SocialAccountsAdmin(admin.ModelAdmin):
     list_display = (
@@ -52,6 +37,34 @@ class FAQAdmin(admin.ModelAdmin):
     list_display = (
         'question',
         'answer'
+    )
+
+
+class GalleryImageTabularInline(admin.TabularInline):
+    model = models.GalleryImage
+
+
+@admin.register(models.GalleryCategory)
+class GalleryCategoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'title',
+    )
+    inlines = (
+        GalleryImageTabularInline,
+    )
+
+
+@admin.register(models.VideoReview)
+class VideoReviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'youtube_url',
+    )
+
+
+@admin.register(models.GalleryImage)
+class GalleryImageAdmin(admin.ModelAdmin):
+    list_display = (
+        'image',
     )
 
 

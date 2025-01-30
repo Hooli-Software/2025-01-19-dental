@@ -28,3 +28,13 @@ def get_doctor_info():
 @register.simple_tag
 def get_faq():
     return models.FAQ.objects.all()
+
+
+@register.simple_tag
+def get_gallery_categories():
+    return models.GalleryCategory.objects.all()
+
+
+@register.simple_tag
+def get_video_reviews():
+    return models.VideoReview.objects.all()

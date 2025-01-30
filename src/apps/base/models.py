@@ -3,19 +3,6 @@ from django.db import models
 from core.models import SingletonModel
 
 
-class Advantage(models.Model):
-    icon = models.ImageField('İkon', upload_to='base/advantage/icon/')
-    title = models.CharField('Başlık', max_length=128)
-    description = models.TextField('Açıklama')
-
-    class Meta:
-        verbose_name = 'Avantaj'
-        verbose_name_plural = 'Avantajlar'
-
-    def __str__(self):
-        return self.title
-
-
 class ServiceCategory(models.Model):
     title = models.CharField('Başlık', max_length=255)
     image = models.ImageField(
@@ -49,25 +36,6 @@ class Service(models.Model):
         return self.title
 
 
-class Portfolio(models.Model):
-    image = models.ImageField('Görsel', upload_to='base/portfolio/image/')
-    title = models.CharField('Başlık', max_length=128)
-    service = models.ForeignKey(
-        Service,
-        verbose_name='Hizmet',
-        on_delete=models.SET_NULL,
-        blank=True,
-        null=True
-    )
-
-    class Meta:
-        verbose_name = 'Portfoyo'
-        verbose_name_plural = 'Portfoyo'
-
-    def __str__(self):
-        return self.title
-
-
 class SocialAccount(models.Model):
     icon = models.TextField('SVG kodu')
     title = models.CharField('Başlık', max_length=255)
@@ -88,6 +56,44 @@ class FAQ(models.Model):
 
     def __str__(self):
         return self.question
+
+
+class GalleryCategory(models.Model):
+    title = models.CharField('Başlık', max_length=128)
+
+    class Meta:
+        verbose_name = 'Galeri kategorisi'
+        verbose_name_plural = 'Galeri kategorileri'
+
+    def __str__(self):
+        return self.title
+
+
+class GalleryImage(models.Model):
+    image = models.ImageField('Resim', upload_to='base/gallery-image/image/')
+    category = models.ForeignKey(
+        GalleryCategory,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        related_name='images'
+    )
+
+    def __str__(self):
+        return self.image.url
+
+    class Meta:
+        verbose_name = 'Galeri resmi'
+        verbose_name_plural = 'Galeri resimleri'
+
+
+class VideoReview(models.Model):
+    image = models.ImageField('Resim', upload_to='base/video-review/image/')
+    youtube_url = models.URLField('Youtube linki')
+
+    class Meta:
+        verbose_name = 'Video değerlendirmesi'
+        verbose_name_plural = 'Video değerlendirmeleri'
 
 
 class DoctorInfo(SingletonModel):

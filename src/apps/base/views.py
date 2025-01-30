@@ -12,6 +12,7 @@ class FooterMixin():
 
 
 class HomeView(FooterMixin, TemplateView):
+    is_footer_transparent = False
     template_name = 'base/home/index.html'
 
 
@@ -21,6 +22,7 @@ class AboutView(FooterMixin, TemplateView):
 
 
 class ContactView(FooterMixin, TemplateView):
+    is_footer_transparent = False
     template_name = 'base/contact/index.html'
 
 
@@ -29,6 +31,7 @@ class PriceListView(FooterMixin, TemplateView):
 
 
 class FAQView(FooterMixin, TemplateView):
+    is_footer_transparent = False
     footer_class = 'space-lg-pt'
     template_name = 'base/faq/index.html'
 
