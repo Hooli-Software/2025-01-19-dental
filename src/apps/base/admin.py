@@ -20,7 +20,18 @@ class ServiceCategoryAdmin(admin.ModelAdmin):
 @admin.register(models.Service)
 class ServiceAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
         'title',
+        'category',
+        'price'
+    )
+    list_editable = (
+        'title',
+        'category'
+    )
+    list_display_links = (
+        'id',
+        'price'
     )
 
 
@@ -35,6 +46,14 @@ class SocialAccountsAdmin(admin.ModelAdmin):
 @admin.register(models.FAQ)
 class FAQAdmin(admin.ModelAdmin):
     list_display = (
+        'id',
+        'question',
+        'answer'
+    )
+    list_display_links = (
+        'id',
+    )
+    list_editable = (
         'question',
         'answer'
     )
