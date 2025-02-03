@@ -11,13 +11,15 @@ ALLOWED_HOSTS = [
     'dental.tr.hoolisoft.xyz',
     'dental.ru.hoolisoft.xyz',
     'dental.uk.hoolisoft.xyz',
-    'localhost'
+    'localhost',
+    'dentalimplantclinicturkey.org'
 ]
 CSRF_TRUSTED_ORIGINS = [
     'https://dental.hoolisoft.xyz',
     'https://dental.tr.hoolisoft.xyz',
     'https://dental.ru.hoolisoft.xyz',
     'https://dental.uk.hoolisoft.xyz',
+    'https://dentalimplantclinicturkey.org',
 ]
 
 INSTALLED_APPS = [
